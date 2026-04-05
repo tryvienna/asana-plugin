@@ -1,0 +1,35 @@
+{
+  "name": "plugin-asana",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Asana integration plugin for Vienna — tasks, projects, and workspaces",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema.ts",
+    "./ui": "./src/ui/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format:check": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@tryvienna/sdk": "^0.1.6",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@tryvienna/ui": "^0.0.7",
+    "@types/node": "^25.3.2",
+    "@types/react": "^19.0.0",
+    "graphql-tag": "^2.12.6",
+    "lucide-react": "^0.500.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.1"
+  }
+}
