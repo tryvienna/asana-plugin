@@ -1,6 +1,7 @@
 {
   "name": "plugin-asana",
   "version": "0.0.1",
+  "vienna-plugin": true,
   "private": true,
   "description": "Asana integration plugin for Vienna — tasks, projects, and workspaces",
   "type": "module",
